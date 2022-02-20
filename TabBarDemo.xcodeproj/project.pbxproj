@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		972B82E927C2C1C60062CFB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B82E827C2C1C60062CFB4 /* AppDelegate.swift */; };
 		972B82EB27C2C1C60062CFB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B82EA27C2C1C60062CFB4 /* SceneDelegate.swift */; };
-		972B82ED27C2C1C60062CFB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B82EC27C2C1C60062CFB4 /* ViewController.swift */; };
 		972B82F027C2C1C60062CFB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972B82EE27C2C1C60062CFB4 /* Main.storyboard */; };
 		972B82F327C2C1C60062CFB4 /* TabBarDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 972B82F127C2C1C60062CFB4 /* TabBarDemo.xcdatamodeld */; };
 		972B82F527C2C1CA0062CFB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972B82F427C2C1CA0062CFB4 /* Assets.xcassets */; };
@@ -17,6 +16,11 @@
 		972B830327C2C1CB0062CFB4 /* TabBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B830227C2C1CB0062CFB4 /* TabBarDemoTests.swift */; };
 		972B830D27C2C1CB0062CFB4 /* TabBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B830C27C2C1CB0062CFB4 /* TabBarDemoUITests.swift */; };
 		972B830F27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B830E27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift */; };
+		972B831E27C2C30B0062CFB4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B831D27C2C30B0062CFB4 /* MyTabBarController.swift */; };
+		979EF2C127C2C8BC00E7D387 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */; };
+		979EF2C227C2C8BC00E7D387 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */; };
+		979EF2C327C2C8BC00E7D387 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */; };
+		979EF2C427C2C8BC00E7D387 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		972B82E527C2C1C60062CFB4 /* TabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972B82E827C2C1C60062CFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972B82EA27C2C1C60062CFB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		972B82EC27C2C1C60062CFB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		972B82EF27C2C1C60062CFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		972B82F227C2C1C60062CFB4 /* TabBarDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabBarDemo.xcdatamodel; sourceTree = "<group>"; };
 		972B82F427C2C1CA0062CFB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		972B830827C2C1CB0062CFB4 /* TabBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972B830C27C2C1CB0062CFB4 /* TabBarDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoUITests.swift; sourceTree = "<group>"; };
 		972B830E27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		972B831D27C2C30B0062CFB4 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,9 @@
 		972B82E727C2C1C60062CFB4 /* TabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				972B832827C2C8500062CFB4 /* TabBar */,
 				972B82E827C2C1C60062CFB4 /* AppDelegate.swift */,
 				972B82EA27C2C1C60062CFB4 /* SceneDelegate.swift */,
-				972B82EC27C2C1C60062CFB4 /* ViewController.swift */,
 				972B82EE27C2C1C60062CFB4 /* Main.storyboard */,
 				972B82F427C2C1CA0062CFB4 /* Assets.xcassets */,
 				972B82F627C2C1CA0062CFB4 /* LaunchScreen.storyboard */,
@@ -128,6 +136,26 @@
 				972B830E27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift */,
 			);
 			path = TabBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		972B832827C2C8500062CFB4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				972B831D27C2C30B0062CFB4 /* MyTabBarController.swift */,
+				979EF2BC27C2C8BC00E7D387 /* Tabs */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		979EF2BC27C2C8BC00E7D387 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */,
+				979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */,
+				979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */,
+				979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +264,8 @@
 			files = (
 				972B82F827C2C1CA0062CFB4 /* LaunchScreen.storyboard in Resources */,
 				972B82F527C2C1CA0062CFB4 /* Assets.xcassets in Resources */,
+				979EF2C227C2C8BC00E7D387 /* HomeViewController.xib in Resources */,
+				979EF2C127C2C8BC00E7D387 /* MessageViewController.xib in Resources */,
 				972B82F027C2C1C60062CFB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979EF2C327C2C8BC00E7D387 /* HomeViewController.swift in Sources */,
 				972B82F327C2C1C60062CFB4 /* TabBarDemo.xcdatamodeld in Sources */,
-				972B82ED27C2C1C60062CFB4 /* ViewController.swift in Sources */,
+				972B831E27C2C30B0062CFB4 /* MyTabBarController.swift in Sources */,
 				972B82E927C2C1C60062CFB4 /* AppDelegate.swift in Sources */,
+				979EF2C427C2C8BC00E7D387 /* MessageViewController.swift in Sources */,
 				972B82EB27C2C1C60062CFB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
