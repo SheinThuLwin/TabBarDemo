@@ -21,6 +21,12 @@
 		979EF2C227C2C8BC00E7D387 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */; };
 		979EF2C327C2C8BC00E7D387 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */; };
 		979EF2C427C2C8BC00E7D387 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */; };
+		979EF2C727C3B03500E7D387 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2C527C3B03500E7D387 /* BookMarkViewController.swift */; };
+		979EF2C827C3B03500E7D387 /* BookMarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2C627C3B03500E7D387 /* BookMarkViewController.xib */; };
+		979EF2CB27C3B31000E7D387 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2C927C3B31000E7D387 /* SettingViewController.swift */; };
+		979EF2CC27C3B31000E7D387 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2CA27C3B31000E7D387 /* SettingViewController.xib */; };
+		979EF2CF27C3B32000E7D387 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2CD27C3B32000E7D387 /* AboutViewController.swift */; };
+		979EF2D027C3B32000E7D387 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2CE27C3B32000E7D387 /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		979EF2C527C3B03500E7D387 /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		979EF2C627C3B03500E7D387 /* BookMarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarkViewController.xib; sourceTree = "<group>"; };
+		979EF2C927C3B31000E7D387 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		979EF2CA27C3B31000E7D387 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		979EF2CD27C3B32000E7D387 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		979EF2CE27C3B32000E7D387 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +166,12 @@
 				979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */,
 				979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */,
 				979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */,
+				979EF2C627C3B03500E7D387 /* BookMarkViewController.xib */,
+				979EF2C527C3B03500E7D387 /* BookMarkViewController.swift */,
+				979EF2CA27C3B31000E7D387 /* SettingViewController.xib */,
+				979EF2C927C3B31000E7D387 /* SettingViewController.swift */,
+				979EF2CE27C3B32000E7D387 /* AboutViewController.xib */,
+				979EF2CD27C3B32000E7D387 /* AboutViewController.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -262,8 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979EF2CC27C3B31000E7D387 /* SettingViewController.xib in Resources */,
 				972B82F827C2C1CA0062CFB4 /* LaunchScreen.storyboard in Resources */,
+				979EF2D027C3B32000E7D387 /* AboutViewController.xib in Resources */,
 				972B82F527C2C1CA0062CFB4 /* Assets.xcassets in Resources */,
+				979EF2C827C3B03500E7D387 /* BookMarkViewController.xib in Resources */,
 				979EF2C227C2C8BC00E7D387 /* HomeViewController.xib in Resources */,
 				979EF2C127C2C8BC00E7D387 /* MessageViewController.xib in Resources */,
 				972B82F027C2C1C60062CFB4 /* Main.storyboard in Resources */,
@@ -292,7 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				979EF2C327C2C8BC00E7D387 /* HomeViewController.swift in Sources */,
+				979EF2C727C3B03500E7D387 /* BookMarkViewController.swift in Sources */,
 				972B82F327C2C1C60062CFB4 /* TabBarDemo.xcdatamodeld in Sources */,
+				979EF2CF27C3B32000E7D387 /* AboutViewController.swift in Sources */,
+				979EF2CB27C3B31000E7D387 /* SettingViewController.swift in Sources */,
 				972B831E27C2C30B0062CFB4 /* MyTabBarController.swift in Sources */,
 				972B82E927C2C1C60062CFB4 /* AppDelegate.swift in Sources */,
 				979EF2C427C2C8BC00E7D387 /* MessageViewController.swift in Sources */,

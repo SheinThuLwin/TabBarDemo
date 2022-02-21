@@ -8,6 +8,12 @@
 import UIKit
 
 class MessageViewController: UIViewController {
+    private static let nibName = "MessageViewController"
+    
+    static func getNewinstance() -> MessageViewController{
+        let vc = MessageViewController(nibName: nibName, bundle: nil)
+        return vc
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

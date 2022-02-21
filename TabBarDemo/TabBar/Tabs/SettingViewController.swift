@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  SettingViewController.swift
 //  TabBarDemo
 //
 //  Created by ut-i02 on 21/02/2022.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    private static let nibName = "HomeViewController"
+class SettingViewController: UIViewController {
+    private static let nibName = "SettingViewController"
     
-    static func getNewinstance() -> HomeViewController{
-        let vc = HomeViewController(nibName: nibName, bundle: nil)
+    static func getNewinstance() -> SettingViewController{
+        let vc = SettingViewController(nibName: nibName, bundle: nil)
         return vc
     }
     
