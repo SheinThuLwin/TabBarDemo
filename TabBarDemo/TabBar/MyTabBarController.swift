@@ -22,6 +22,7 @@ class MyTabBarController: UITabBarController {
     
     private func setupTabBar(){
         self.viewControllers = getTabViewControllers()
+        selectedIndex = 1
         
         tabBar.layer.shadowColor = UIColor.red.cgColor
         tabBar.layer.shadowOpacity = 0.8
