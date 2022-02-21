@@ -11,3 +11,6 @@ Demo app using UITabBarController.
 
 ## Icons
 [icon8](https://icons8.com/)
+
+## Screen Shot
+![Screen Shot](https://github.com/SheinThuLwin/TabBarDemo/blob/main/Doc/Screenshot/Screen%20Shot%202022-02-21%20at%207.13.36%20PM.png)
