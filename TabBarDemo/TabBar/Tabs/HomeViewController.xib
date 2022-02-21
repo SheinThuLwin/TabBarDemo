@@ -34,7 +34,6 @@
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
             <point key="canvasLocation" x="131.8840579710145" y="82.366071428571431"/>
         </view>
-        <tabBarItem title="Item" id="1er-dT-oPP"/>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">

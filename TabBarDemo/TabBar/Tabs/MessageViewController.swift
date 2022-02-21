@@ -8,7 +8,6 @@
 import UIKit
 
 class MessageViewController: UIViewController {
-    @IBOutlet var myTabBarItem: UITabBarItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
