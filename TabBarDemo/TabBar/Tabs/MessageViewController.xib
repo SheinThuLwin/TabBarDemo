@@ -20,7 +20,21 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YI7-yV-jPc">
                     <rect key="frame" x="20" y="44" width="374" height="749"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78S-Kc-PIv">
+                            <rect key="frame" x="8" y="356.5" width="358" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="78S-Kc-PIv" secondAttribute="trailing" constant="8" id="FIb-bD-Bv5"/>
+                        <constraint firstItem="78S-Kc-PIv" firstAttribute="leading" secondItem="YI7-yV-jPc" secondAttribute="leading" constant="8" id="LxM-Ih-loO"/>
+                        <constraint firstItem="78S-Kc-PIv" firstAttribute="centerX" secondItem="YI7-yV-jPc" secondAttribute="centerX" id="N1B-I1-rYA"/>
+                        <constraint firstItem="78S-Kc-PIv" firstAttribute="centerY" secondItem="YI7-yV-jPc" secondAttribute="centerY" id="Vm8-tS-1DT"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

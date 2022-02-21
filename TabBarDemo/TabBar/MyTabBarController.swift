@@ -13,6 +13,9 @@ class MyTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.tabBar.unselectedItemTintColor = .white
+        self.tabBar.tintColor = .orange
+        
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let messageVC = MessageViewController(nibName: "MessageViewController", bundle: nil)
         
