@@ -14,3 +14,5 @@ Demo app using UITabBarController.
 
 ## Screen Shot
 ![Screen Shot](https://github.com/SheinThuLwin/TabBarDemo/blob/main/Doc/Screenshot/Screen%20Shot%202022-02-21%20at%207.13.36%20PM.png)
+
+![Screen Shot](https://github.com/SheinThuLwin/TabBarDemo/blob/main/Doc/Screenshot/Screen%20Shot%202022-02-23%20at%201.12.44%20AM.png)
