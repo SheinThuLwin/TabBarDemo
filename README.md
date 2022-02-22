@@ -1,5 +1,6 @@
 # TabBarDemo
 Demo app using UITabBarController.
+I used crazy/ugly color and view spacing for easy to debug layout.
 
 ## Functions
 - TabBar style setup (shadow, border, background, tintColor, font)
