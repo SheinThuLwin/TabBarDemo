@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProfileViewController" customModule="TabBarDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAE-EC-QlE">
+                    <rect key="frame" x="20" y="52" width="374" height="802"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-lm-lXf">
+                            <rect key="frame" x="117" y="383" width="140" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSJ-cZ-1pa">
+                            <rect key="frame" x="8" y="763" width="358" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="tgD-Ny-GdL"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                            <connections>
+                                <action selector="btnTouchUpInside:" destination="-1" eventType="touchUpInside" id="fUZ-yd-KhG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QSJ-cZ-1pa" secondAttribute="bottom" constant="8" id="Kdv-ge-Fzm"/>
+                        <constraint firstItem="G3d-lm-lXf" firstAttribute="centerY" secondItem="lAE-EC-QlE" secondAttribute="centerY" id="g41-Mf-G24"/>
+                        <constraint firstItem="G3d-lm-lXf" firstAttribute="centerX" secondItem="lAE-EC-QlE" secondAttribute="centerX" id="jZ6-dR-sH2"/>
+                        <constraint firstAttribute="trailing" secondItem="QSJ-cZ-1pa" secondAttribute="trailing" constant="8" id="qqq-o2-Tu4"/>
+                        <constraint firstItem="QSJ-cZ-1pa" firstAttribute="leading" secondItem="lAE-EC-QlE" secondAttribute="leading" constant="8" id="ymV-F7-3MY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lAE-EC-QlE" secondAttribute="trailing" constant="20" id="5TC-nq-JrL"/>
+                <constraint firstItem="lAE-EC-QlE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="5cf-U5-ofW"/>
+                <constraint firstItem="lAE-EC-QlE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IzP-HD-xdI"/>
+                <constraint firstItem="lAE-EC-QlE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-8" id="TVg-zC-i5i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lAE-EC-QlE" secondAttribute="trailing" constant="20" id="uW1-Vi-MK2"/>
+                <constraint firstItem="lAE-EC-QlE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="w0v-0E-tQ5"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

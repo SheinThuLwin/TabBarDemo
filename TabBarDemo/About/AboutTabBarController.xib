@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutTabBarController" customModule="TabBarDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="G42-Zw-75X" id="6FE-Un-UuE"/>
+                <outlet property="myTabBar" destination="DA7-G6-xCB" id="t3c-ub-p8V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DA7-G6-xCB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8mo-Nd-ZXs"/>
+                    </constraints>
+                    <items/>
+                </tabBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G42-Zw-75X">
+                    <rect key="frame" x="0.0" y="84" width="414" height="729"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="DA7-G6-xCB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4gu-PU-LRB"/>
+                <constraint firstItem="G42-Zw-75X" firstAttribute="top" secondItem="DA7-G6-xCB" secondAttribute="bottom" id="99R-xP-Hv2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G42-Zw-75X" secondAttribute="trailing" id="Mdo-jn-gT9"/>
+                <constraint firstItem="DA7-G6-xCB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OMY-WQ-Tx2"/>
+                <constraint firstItem="G42-Zw-75X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rVW-aa-3XT"/>
+                <constraint firstItem="DA7-G6-xCB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wkY-Nx-xx0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="G42-Zw-75X" secondAttribute="bottom" id="yQI-Fy-lOI"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

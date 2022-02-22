@@ -13,14 +13,14 @@ class MyTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupTabBar()
+        setupTabBar(tabBar: self.tabBar)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        setupTabBarItemSelectedStyle()
+        setupTabBarItemSelectedStyle(tabBar: self.tabBar)
     }
     
-    private func setupTabBar(){
+    private func setupTabBar(tabBar: UITabBar){
         self.viewControllers = getTabViewControllers()
         selectedIndex = 1
         
@@ -29,21 +29,21 @@ class MyTabBarController: UITabBarController {
         tabBar.layer.shadowOffset = CGSize(width: 2, height: 2)//CGSize.zero
         tabBar.layer.shadowRadius = 5
         
-        self.tabBar.layer.borderColor = UIColor.yellow.cgColor
-        self.tabBar.layer.borderWidth = 2
+        tabBar.layer.borderColor = UIColor.yellow.cgColor
+        tabBar.layer.borderWidth = 2
         
-        self.tabBar.clipsToBounds = false
-        self.tabBar.backgroundColor = .white
+        tabBar.clipsToBounds = false
+        tabBar.backgroundColor = .white
         
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
         
-        self.tabBar.unselectedItemTintColor = .purple
-        self.tabBar.tintColor = .orange
+        tabBar.unselectedItemTintColor = .purple
+        tabBar.tintColor = .orange
     }
     
     //This func will work correctly if you call from viewDidAppear.
-    private func setupTabBarItemSelectedStyle(){
+    private func setupTabBarItemSelectedStyle(tabBar: UITabBar){
         let tabCount = CGFloat(tabBar.items?.count ?? 0)
         if tabCount > 0{
             let bottomSafeArea: CGFloat = self.view.safeAreaInsets.bottom
@@ -54,7 +54,7 @@ class MyTabBarController: UITabBarController {
                                                                              lineHeight: 3.0,
                                                                              bottomSafeArea: bottomSafeArea)
 
-            self.tabBar.selectionIndicatorImage = selectionIndicatorImage
+            tabBar.selectionIndicatorImage = selectionIndicatorImage
         }
     }
     
@@ -63,7 +63,7 @@ class MyTabBarController: UITabBarController {
         let messageVC = MessageViewController.getNewinstance()
         let bookmarkVC = BookMarkViewController.getNewinstance()
         let settingVC = SettingViewController.getNewinstance()
-        let aboutVC = AboutViewController.getNewinstance()
+        let aboutVC = AboutTabBarController.getNewinstance()
         
         homeVC.tabBarItem.title = "Home"
         homeVC.tabBarItem.image = UIImage(named: "home")
@@ -93,16 +93,4 @@ class MyTabBarController: UITabBarController {
     }
     */
 
-}
-
-extension UIImage {
-    //Ref: https://nitishrajput912.medium.com/underline-tabbar-ios-swift-1ae53ac4a75f
-    func createSelectionIndicator(color: UIColor, size: CGSize, lineHeight: CGFloat, bottomSafeArea: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        color.setFill()
-        UIRectFill(CGRect(x: 0, y: size.height - bottomSafeArea, width: size.width, height: lineHeight))
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image!
-    }
 }

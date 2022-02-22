@@ -1,17 +1,17 @@
 //
-//  AboutViewController.swift
+//  ShopsViewController.swift
 //  TabBarDemo
 //
-//  Created by ut-i02 on 21/02/2022.
+//  Created by ut-i02 on 22/02/2022.
 //
 
 import UIKit
 
-class AboutViewController: UIViewController {
-    private static let nibName = "AboutViewController"
+class ShopsViewController: UIViewController {
+    private static let nibName = "ShopsViewController"
     
-    static func getNewinstance() -> AboutViewController{
-        let vc = AboutViewController(nibName: nibName, bundle: nil)
+    static func getNewinstance() -> ShopsViewController{
+        let vc = ShopsViewController(nibName: nibName, bundle: nil)
         return vc
     }
     
@@ -21,7 +21,10 @@ class AboutViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnTouchUpInside(_ sender: UIButton) {
+        print("Button press at shops.")
+    }
+    
     /*
     // MARK: - Navigation
 
