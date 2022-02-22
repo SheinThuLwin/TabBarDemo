@@ -11,6 +11,7 @@ Demo app using UITabBarController.
 
 ## Reference
 [Underline Tabbar ios swift](https://nitishrajput912.medium.com/underline-tabbar-ios-swift-1ae53ac4a75f)
+[Change iOS Default UI Tab Bar Font and Size](https://medium.com/@developer.rsroy/change-ios-default-ui-tab-bar-font-and-size-bbd065f3f270)
 
 ## Icons
 [icon8](https://icons8.com/)
