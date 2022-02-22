@@ -2,9 +2,12 @@
 Demo app using UITabBarController.
 
 ## Functions
-- TabBar style setup (shadow, border, background, tintColor)
-- TabBar custom selected style
+- TabBar style setup (shadow, border, background, tintColor, font)
+- TabBar custom selected style (selected underline)
 - TabBar selected index
+- Top TabBar
+- Use TabBar in UIViewController
+- Add/remove child-ViewControllers
 
 ## Reference
 [Underline Tabbar ios swift](https://nitishrajput912.medium.com/underline-tabbar-ios-swift-1ae53ac4a75f)
