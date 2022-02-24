@@ -29,6 +29,10 @@ class AboutTabBarController: UIViewController {
         setupTabBar(tabBar: myTabBar)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.title = "About"
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         setupTabBarItemSelectedStyle(tabBar: myTabBar)
         setCurrentViewController(viewControllers: self.viewControllers, index: selectedIndex)
@@ -37,9 +41,6 @@ class AboutTabBarController: UIViewController {
     private func setupTabBar(tabBar: UITabBar){
         self.viewControllers = getTabViewControllers()
         selectedIndex = 1
-        
-        let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)]
-        UITabBarItem.appearance().setTitleTextAttributes(systemFontAttributes, for: .normal)
         
         tabBar.clipsToBounds = false
         tabBar.backgroundColor = .white
@@ -78,14 +79,17 @@ class AboutTabBarController: UIViewController {
         let shopVC = ShopsViewController.getNewinstance()
         let profileVC = MyProfileViewController.getNewinstance()
         let txtVOffset: CGFloat = -12
+        let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)]
         
         shopVC.tabBarItem.title = "Shops"
         shopVC.tabBarItem.image = nil
         shopVC.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: txtVOffset)
+        shopVC.tabBarItem.setTitleTextAttributes(systemFontAttributes, for: .normal)
         
         profileVC.tabBarItem.title = "My Profile"
         profileVC.tabBarItem.image = nil
         profileVC.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: txtVOffset)
+        profileVC.tabBarItem.setTitleTextAttributes(systemFontAttributes, for: .normal)
         
         return [shopVC, profileVC]
     }

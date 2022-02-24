@@ -1,17 +1,18 @@
 //
-//  MessageViewController.swift
+//  ShopViewController.swift
 //  TabBarDemo
 //
-//  Created by ut-i02 on 21/02/2022.
+//  Created by ut-i02 on 24/02/2022.
 //
 
 import UIKit
 
-class MessageViewController: UIViewController {
-    private static let nibName = "MessageViewController"
+class ShopViewController: UIViewController {
     
-    static func getNewinstance() -> MessageViewController{
-        let vc = MessageViewController(nibName: nibName, bundle: nil)
+    private static let nibName = "ShopViewController"
+    
+    static func getNewinstance() -> ShopViewController{
+        let vc = ShopViewController(nibName: nibName, bundle: nil)
         return vc
     }
     
@@ -21,6 +22,9 @@ class MessageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        title = "Shop"
+    }
 
     /*
     // MARK: - Navigation

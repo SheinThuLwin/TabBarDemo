@@ -27,13 +27,27 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw8-Bm-sla" userLabel="btnNewMessage">
+                            <rect key="frame" x="8" y="710" width="358" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="MBy-YJ-kDr"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="New Message"/>
+                            <connections>
+                                <action selector="btnNewMessageTouchUpInside:" destination="-1" eventType="touchUpInside" id="zq7-bS-Jng"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nw8-Bm-sla" secondAttribute="trailing" constant="8" id="1ZP-cU-frG"/>
                         <constraint firstAttribute="trailing" secondItem="78S-Kc-PIv" secondAttribute="trailing" constant="8" id="FIb-bD-Bv5"/>
                         <constraint firstItem="78S-Kc-PIv" firstAttribute="leading" secondItem="YI7-yV-jPc" secondAttribute="leading" constant="8" id="LxM-Ih-loO"/>
                         <constraint firstItem="78S-Kc-PIv" firstAttribute="centerX" secondItem="YI7-yV-jPc" secondAttribute="centerX" id="N1B-I1-rYA"/>
                         <constraint firstItem="78S-Kc-PIv" firstAttribute="centerY" secondItem="YI7-yV-jPc" secondAttribute="centerY" id="Vm8-tS-1DT"/>
+                        <constraint firstAttribute="bottom" secondItem="nw8-Bm-sla" secondAttribute="bottom" constant="8" id="c1S-RM-th3"/>
+                        <constraint firstItem="nw8-Bm-sla" firstAttribute="leading" secondItem="YI7-yV-jPc" secondAttribute="leading" constant="8" id="wPk-25-0IS"/>
                     </constraints>
                 </view>
             </subviews>

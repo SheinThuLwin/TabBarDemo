@@ -1,17 +1,18 @@
 //
-//  BookMarkViewController.swift
+//  NewMessageViewController.swift
 //  TabBarDemo
 //
-//  Created by ut-i02 on 21/02/2022.
+//  Created by ut-i02 on 24/02/2022.
 //
 
 import UIKit
 
-class BookMarkViewController: UIViewController {
-    private static let nibName = "BookMarkViewController"
+class NewMessageViewController: UIViewController {
+
+    private static let nibName = "NewMessageViewController"
     
-    static func getNewinstance() -> BookMarkViewController{
-        let vc = BookMarkViewController(nibName: nibName, bundle: nil)
+    static func getNewinstance() -> NewMessageViewController{
+        let vc = NewMessageViewController(nibName: nibName, bundle: nil)
         return vc
     }
     
@@ -22,7 +23,7 @@ class BookMarkViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tabBarController?.title = "Bookmark"
+        title = "New Message"
     }
 
 

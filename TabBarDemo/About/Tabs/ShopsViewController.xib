@@ -33,7 +33,7 @@
                                 <constraint firstAttribute="height" constant="31" id="c27-OS-BWX"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="Go Detail"/>
                             <connections>
                                 <action selector="btnTouchUpInside:" destination="-1" eventType="touchUpInside" id="DcO-Yw-jlW"/>
                             </connections>

@@ -20,9 +20,15 @@ class ShopsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.parent?.tabBarController?.title = "Shops"
+    }
 
     @IBAction func btnTouchUpInside(_ sender: UIButton) {
         print("Button press at shops.")
+        let vc = ShopViewController.getNewinstance()
+        self.parent?.navigationController?.pushViewController(vc, animated: true)
     }
     
     /*

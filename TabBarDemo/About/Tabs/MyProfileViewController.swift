@@ -20,6 +20,10 @@ class MyProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.parent?.tabBarController?.title = "My Profile"
+    }
 
     @IBAction func btnTouchUpInside(_ sender: UIButton) {
         print("Button press at Profile.")

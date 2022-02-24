@@ -17,6 +17,10 @@
 		972B830D27C2C1CB0062CFB4 /* TabBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B830C27C2C1CB0062CFB4 /* TabBarDemoUITests.swift */; };
 		972B830F27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B830E27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift */; };
 		972B831E27C2C30B0062CFB4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B831D27C2C30B0062CFB4 /* MyTabBarController.swift */; };
+		97769BA227C795C5008B98AB /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97769BA027C795C5008B98AB /* NewMessageViewController.swift */; };
+		97769BA327C795C5008B98AB /* NewMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97769BA127C795C5008B98AB /* NewMessageViewController.xib */; };
+		97769BA727C79F15008B98AB /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97769BA527C79F15008B98AB /* ShopViewController.swift */; };
+		97769BA827C79F15008B98AB /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97769BA627C79F15008B98AB /* ShopViewController.xib */; };
 		979EF2C127C2C8BC00E7D387 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */; };
 		979EF2C227C2C8BC00E7D387 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */; };
 		979EF2C327C2C8BC00E7D387 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */; };
@@ -66,6 +70,10 @@
 		972B830C27C2C1CB0062CFB4 /* TabBarDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoUITests.swift; sourceTree = "<group>"; };
 		972B830E27C2C1CB0062CFB4 /* TabBarDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		972B831D27C2C30B0062CFB4 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		97769BA027C795C5008B98AB /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		97769BA127C795C5008B98AB /* NewMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewMessageViewController.xib; sourceTree = "<group>"; };
+		97769BA527C79F15008B98AB /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		97769BA627C79F15008B98AB /* ShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
 		979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 			children = (
 				979EF2DF27C49C1A00E7D387 /* UIImageExtension.swift */,
 				972B832827C2C8500062CFB4 /* TabBar */,
+				97769BA427C79CEA008B98AB /* Message */,
 				979EF2D527C499E800E7D387 /* About */,
 				972B82E827C2C1C60062CFB4 /* AppDelegate.swift */,
 				972B82EA27C2C1C60062CFB4 /* SceneDelegate.swift */,
@@ -171,13 +180,22 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		97769BA427C79CEA008B98AB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */,
+				979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */,
+				97769BA027C795C5008B98AB /* NewMessageViewController.swift */,
+				97769BA127C795C5008B98AB /* NewMessageViewController.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		979EF2BC27C2C8BC00E7D387 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
 				979EF2BF27C2C8BC00E7D387 /* HomeViewController.swift */,
 				979EF2BE27C2C8BC00E7D387 /* HomeViewController.xib */,
-				979EF2C027C2C8BC00E7D387 /* MessageViewController.swift */,
-				979EF2BD27C2C8BC00E7D387 /* MessageViewController.xib */,
 				979EF2C527C3B03500E7D387 /* BookMarkViewController.swift */,
 				979EF2C627C3B03500E7D387 /* BookMarkViewController.xib */,
 				979EF2C927C3B31000E7D387 /* SettingViewController.swift */,
@@ -201,6 +219,8 @@
 			children = (
 				979EF2D727C49A3C00E7D387 /* ShopsViewController.swift */,
 				979EF2D827C49A3C00E7D387 /* ShopsViewController.xib */,
+				97769BA527C79F15008B98AB /* ShopViewController.swift */,
+				97769BA627C79F15008B98AB /* ShopViewController.xib */,
 				979EF2DB27C49A6C00E7D387 /* MyProfileViewController.swift */,
 				979EF2DC27C49A6C00E7D387 /* MyProfileViewController.xib */,
 			);
@@ -311,7 +331,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97769BA827C79F15008B98AB /* ShopViewController.xib in Resources */,
 				979EF2CC27C3B31000E7D387 /* SettingViewController.xib in Resources */,
+				97769BA327C795C5008B98AB /* NewMessageViewController.xib in Resources */,
 				972B82F827C2C1CA0062CFB4 /* LaunchScreen.storyboard in Resources */,
 				979EF2DE27C49A6C00E7D387 /* MyProfileViewController.xib in Resources */,
 				979EF2D427C499D200E7D387 /* AboutTabBarController.xib in Resources */,
@@ -353,9 +375,11 @@
 				979EF2DD27C49A6C00E7D387 /* MyProfileViewController.swift in Sources */,
 				979EF2CB27C3B31000E7D387 /* SettingViewController.swift in Sources */,
 				972B831E27C2C30B0062CFB4 /* MyTabBarController.swift in Sources */,
+				97769BA227C795C5008B98AB /* NewMessageViewController.swift in Sources */,
 				979EF2E027C49C1A00E7D387 /* UIImageExtension.swift in Sources */,
 				972B82E927C2C1C60062CFB4 /* AppDelegate.swift in Sources */,
 				979EF2C427C2C8BC00E7D387 /* MessageViewController.swift in Sources */,
+				97769BA727C79F15008B98AB /* ShopViewController.swift in Sources */,
 				972B82EB27C2C1C60062CFB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
