@@ -11,7 +11,7 @@ class NewMessageViewController: UIViewController {
 
     private static let nibName = "NewMessageViewController"
     
-    static func getNewinstance() -> NewMessageViewController{
+    static func getNewInstance() -> NewMessageViewController{
         let vc = NewMessageViewController(nibName: nibName, bundle: nil)
         return vc
     }

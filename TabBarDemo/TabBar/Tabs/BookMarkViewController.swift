@@ -10,7 +10,7 @@ import UIKit
 class BookMarkViewController: UIViewController {
     private static let nibName = "BookMarkViewController"
     
-    static func getNewinstance() -> BookMarkViewController{
+    static func getNewInstance() -> BookMarkViewController{
         let vc = BookMarkViewController(nibName: nibName, bundle: nil)
         return vc
     }

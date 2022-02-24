@@ -10,7 +10,7 @@ import UIKit
 class ShopsViewController: UIViewController {
     private static let nibName = "ShopsViewController"
     
-    static func getNewinstance() -> ShopsViewController{
+    static func getNewInstance() -> ShopsViewController{
         let vc = ShopsViewController(nibName: nibName, bundle: nil)
         return vc
     }
@@ -27,7 +27,7 @@ class ShopsViewController: UIViewController {
 
     @IBAction func btnTouchUpInside(_ sender: UIButton) {
         print("Button press at shops.")
-        let vc = ShopViewController.getNewinstance()
+        let vc = ShopViewController.getNewInstance()
         self.parent?.navigationController?.pushViewController(vc, animated: true)
     }
     

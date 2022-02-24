@@ -10,7 +10,7 @@ import UIKit
 class MyProfileViewController: UIViewController {
     private static let nibName = "MyProfileViewController"
     
-    static func getNewinstance() -> MyProfileViewController{
+    static func getNewInstance() -> MyProfileViewController{
         let vc = MyProfileViewController(nibName: nibName, bundle: nil)
         return vc
     }

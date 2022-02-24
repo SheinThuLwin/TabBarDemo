@@ -17,7 +17,7 @@ class AboutTabBarController: UIViewController {
     private var tabBarItems: [UITabBarItem] = []
     private var selectedIndex = 0
     
-    static func getNewinstance() -> AboutTabBarController{
+    static func getNewInstance() -> AboutTabBarController{
         let vc = AboutTabBarController(nibName: nibName, bundle: nil)
         return vc
     }
@@ -76,8 +76,8 @@ class AboutTabBarController: UIViewController {
     }
     
     private func getTabViewControllers() -> [UIViewController]{
-        let shopVC = ShopsViewController.getNewinstance()
-        let profileVC = MyProfileViewController.getNewinstance()
+        let shopVC = ShopsViewController.getNewInstance()
+        let profileVC = MyProfileViewController.getNewInstance()
         let txtVOffset: CGFloat = -12
         let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)]
         

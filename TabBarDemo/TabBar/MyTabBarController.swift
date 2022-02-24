@@ -60,11 +60,11 @@ class MyTabBarController: UITabBarController {
     }
     
     private func getTabViewControllers() -> [UIViewController]{
-        let homeVC = HomeViewController.getNewinstance()
-        let messageVC = MessageViewController.getNewinstance()
-        let bookmarkVC = BookMarkViewController.getNewinstance()
-        let settingVC = SettingViewController.getNewinstance()
-        let aboutVC = AboutTabBarController.getNewinstance()
+        let homeVC = HomeViewController.getNewInstance()
+        let messageVC = MessageViewController.getNewInstance()
+        let bookmarkVC = BookMarkViewController.getNewInstance()
+        let settingVC = SettingViewController.getNewInstance()
+        let aboutVC = AboutTabBarController.getNewInstance()
         
         homeVC.tabBarItem.title = "Home"
         homeVC.tabBarItem.image = UIImage(named: "home")

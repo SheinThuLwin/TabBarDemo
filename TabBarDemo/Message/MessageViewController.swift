@@ -10,7 +10,7 @@ import UIKit
 class MessageViewController: UIViewController {
     private static let nibName = "MessageViewController"
     
-    static func getNewinstance() -> MessageViewController{
+    static func getNewInstance() -> MessageViewController{
         let vc = MessageViewController(nibName: nibName, bundle: nil)
         return vc
     }
@@ -31,7 +31,7 @@ class MessageViewController: UIViewController {
     }
 
     @IBAction func btnNewMessageTouchUpInside(_ sender: UIButton) {
-        let vc = NewMessageViewController.getNewinstance()
+        let vc = NewMessageViewController.getNewInstance()
         print("Got to new message")
         self.navigationController?.pushViewController(vc, animated: true)
     }

@@ -11,7 +11,7 @@ class ShopViewController: UIViewController {
     
     private static let nibName = "ShopViewController"
     
-    static func getNewinstance() -> ShopViewController{
+    static func getNewInstance() -> ShopViewController{
         let vc = ShopViewController(nibName: nibName, bundle: nil)
         return vc
     }

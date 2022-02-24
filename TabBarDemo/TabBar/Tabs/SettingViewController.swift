@@ -10,7 +10,7 @@ import UIKit
 class SettingViewController: UIViewController {
     private static let nibName = "SettingViewController"
     
-    static func getNewinstance() -> SettingViewController{
+    static func getNewInstance() -> SettingViewController{
         let vc = SettingViewController(nibName: nibName, bundle: nil)
         return vc
     }

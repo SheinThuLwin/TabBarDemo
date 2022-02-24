@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     private static let nibName = "HomeViewController"
     
-    static func getNewinstance() -> HomeViewController{
+    static func getNewInstance() -> HomeViewController{
         let vc = HomeViewController(nibName: nibName, bundle: nil)
         return vc
     }
