@@ -78,20 +78,21 @@ class AboutTabBarController: UIViewController {
     private func getTabViewControllers() -> [UIViewController]{
         let shopVC = ShopsViewController.getNewInstance()
         let profileVC = MyProfileViewController.getNewInstance()
+        
+        setupTitleOnlyTabBarItem(tabBarItem: shopVC.tabBarItem, title: "Shops")
+        setupTitleOnlyTabBarItem(tabBarItem: profileVC.tabBarItem, title: "My Profile")
+        
+        return [shopVC, profileVC]
+    }
+    
+    private func setupTitleOnlyTabBarItem(tabBarItem: UITabBarItem, title: String){
         let txtVOffset: CGFloat = -12
         let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)]
         
-        shopVC.tabBarItem.title = "Shops"
-        shopVC.tabBarItem.image = nil
-        shopVC.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: txtVOffset)
-        shopVC.tabBarItem.setTitleTextAttributes(systemFontAttributes, for: .normal)
-        
-        profileVC.tabBarItem.title = "My Profile"
-        profileVC.tabBarItem.image = nil
-        profileVC.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: txtVOffset)
-        profileVC.tabBarItem.setTitleTextAttributes(systemFontAttributes, for: .normal)
-        
-        return [shopVC, profileVC]
+        tabBarItem.title = title
+        tabBarItem.image = nil
+        tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: txtVOffset)
+        tabBarItem.setTitleTextAttributes(systemFontAttributes, for: .normal)
     }
 
     /*
